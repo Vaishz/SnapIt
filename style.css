@@ -1,0 +1,107 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'PT Serif', serif;
+
+}
+
+.flex-div{
+
+    display: flex;
+    align-items: center;
+
+
+}
+
+nav{
+    padding: 10px 2%;
+    justify-content: space-between;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background: black;
+
+}
+
+.logoContainer img{
+
+    width: 200px;
+    margin-right: 0.5px ;
+    border-radius: 25px;
+}
+
+
+
+.searchbox{
+    width: 250px;
+    background-color: rgb(207, 231, 233);
+    padding: 3px 20px ; 
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+
+}
+
+.searchbox input{
+height: 30px;
+width: 1000px;
+line-height: 20px;
+    margin: 0;
+    min-width: 0;
+
+border: none;
+outline: none;
+background-color: rgb(207, 231, 233);
+padding: 20px;
+font-size: 15px;
+
+}
+
+nav ul{
+
+    list-style: none;
+    display: flex;
+}
+
+nav li{
+margin-right: 20px;
+font-size: 22px;
+color: rgb(255, 248, 248);
+} 
+
+.wrapper{
+    width: 100%;
+}
+
+.slide-container{
+    height: 500px;
+    position: relative;
+
+}
+
+.slide-image{
+    height: 100%;
+   position: absolute;
+    
+}
+
+.slide-image img{
+
+    width: 150%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.nextbtn, .prevbtn{
+    background-color: #eee;
+    padding: 16px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+    cursor: pointer;
+}
+
+.nextbtn{
+    right: 0;
+}
